@@ -56,3 +56,9 @@ gem 'slim'
 
 # Using Foundation as front-end Framework
 gem 'foundation-rails'
+
+# Using Carrierwave
+gem 'carrierwave'
+
+# Using Mini-Magick
+gem 'mini_magick'
