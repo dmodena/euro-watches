@@ -38,7 +38,21 @@ group :development, :test do
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+  
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
+end
+
+group :production do
+  # Use PostGresSQL as the database for Active Record
+  gem 'pg'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Addim SLIM as HTML pre-processor
+gem 'slim'
+
+# Using Foundation as front-end Framework
+gem 'foundation-rails'
