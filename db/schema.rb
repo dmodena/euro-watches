@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150326213940) do
+ActiveRecord::Schema.define(version: 20150326220143) do
 
   create_table "brands", force: :cascade do |t|
     t.string   "name"
@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(version: 20150326213940) do
     t.integer  "stock_quantity"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.string   "image"
   end
 
   add_index "products", ["brand_id"], name: "index_products_on_brand_id"
