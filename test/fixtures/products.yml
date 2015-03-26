@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  brand_id: 
+  model: MyString
+  description: MyText
+  movement: MyString
+  case_diameter: 9.99
+  case_material: MyString
+  strap_material: MyString
+  swiss_made: false
+  cosc: false
+  geneva_hallmark: false
+  price: 9.99
+  stock_quantity: 1
+
+two:
+  brand_id: 
+  model: MyString
+  description: MyText
+  movement: MyString
+  case_diameter: 9.99
+  case_material: MyString
+  strap_material: MyString
+  swiss_made: false
+  cosc: false
+  geneva_hallmark: false
+  price: 9.99
+  stock_quantity: 1
