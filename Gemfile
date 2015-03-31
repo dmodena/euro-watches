@@ -66,3 +66,6 @@ gem 'devise'
 
 # Using Active Admin
 gem 'activeadmin', github: 'activeadmin'
+
+# Using Country Select
+gem 'country_select'
