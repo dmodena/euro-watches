@@ -18,3 +18,4 @@
 
 # Ignore images
 /app/assets/images/*.*
+/public/uploads
