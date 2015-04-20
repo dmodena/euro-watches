@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150326222651) do
+ActiveRecord::Schema.define(version: 20150420173636) do
+
+  create_table "abouts", force: :cascade do |t|
+    t.string   "name"
+    t.text     "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -67,6 +74,19 @@ ActiveRecord::Schema.define(version: 20150326222651) do
 
   add_index "complications_products", ["complication_id"], name: "index_complications_products_on_complication_id"
   add_index "complications_products", ["product_id"], name: "index_complications_products_on_product_id"
+
+  create_table "contacts", force: :cascade do |t|
+    t.string   "name"
+    t.string   "address"
+    t.string   "city"
+    t.string   "province"
+    t.string   "postal_code"
+    t.string   "country"
+    t.string   "telephone"
+    t.string   "email"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "products", force: :cascade do |t|
     t.integer  "brand_id"
