@@ -1,0 +1,52 @@
+h3 == product.brand.name
+
+h4 == product.model
+
+- if product.image.present?
+  p == image_tag product.image.medium.url
+
+p
+  span.label Description:
+
+p == product.description
+
+p
+  span.label> Movement:
+  span == product.movement
+  
+p
+  span.label> Case diameter:
+  span == product.case_diameter
+  span mm
+  
+p
+  span.label> Case material:
+  span == product.case_material
+  
+p
+  span.label> Swiss Made:
+  - if product.swiss_made?
+    span Yes
+  - else
+    span No
+    
+p
+  span.label> COSC:
+  - if product.cosc?
+    span Yes
+  - else
+    span No
+
+p
+  span.label> Geneva Hallmark:
+  - if product.geneva_hallmark?
+    span Yes
+  - else
+    span No
+    
+p
+  span.label> Price:
+  span $
+  span == product.price.round(2)
+  
+h5 == link_to "Back", products_path
