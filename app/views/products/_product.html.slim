@@ -2,3 +2,5 @@ h4 == link_to "#{product.brand.name} - #{product.model}", product
 
 - if product.image.present?
   p == image_tag product.image.small.url
+  
+p $#{product.price}
