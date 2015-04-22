@@ -13,5 +13,4 @@ Rails.application.routes.draw do
   # Brands routes
   get 'brands' => 'brands#index'
   get 'brands/:id' => 'brands#show', as: 'brand', id: /\d+/
-
 end
