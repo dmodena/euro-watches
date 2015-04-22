@@ -1,3 +1,3 @@
 class Complication < ActiveRecord::Base
-  has_many :brand, through: :complications_products
+  has_many :product, through: :complications_products
 end
